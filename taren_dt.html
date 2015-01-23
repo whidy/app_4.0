@@ -17,17 +17,17 @@
 			<div class="m-message-list" id="m-message-list">
 				<div class="m-message-list-item">
 					<p class="th">回复 <a href="pcautobrowser://user-center/30151526" class="name">英子</a><i class="date f-fr">2015-01-20 08:58:47</i></p>
-					<div class="tb">根据其最近的一次市场调查发现，苹果公司占据了智能手机市场大约86的利润额，三星则获得了行业18的利润额。苹果其最和三星所占的百分比加起来超过了100，这是因为部仍比加起部了智来处于损状态......</div>
+					<div class="tb hide-content">根据其最近的一次市场调查发现，苹果公司占据了智能手机市场大约86的利润额，三星则获得了行了智能手机市场大约86的利润额，三星则获得了行了智能手机市场大约86的利润额，三星则获得了行业18的利润额。苹果其最和三星所占的百分比加起来超过了100，这是因为部仍比加起部了智来处于损状态......</div>
 					<a href="pcautobrowser://bbs-topic/6500219" class="other">帖子：<em>我的小白陪我4个月了，迟到的作业</em></a>
 				</div>
 				<div class="m-message-list-item">
 					<p class="th">发表了帖子<i class="date f-fr">2015-01-19 22:23:42</i></p>
-					<div class="tb">也只有晚上才有时间来发一些贴子了</div>
+					<div class="tb hide-content">也只有晚上才有时间来发一些贴子了</div>
 					<a href="pcautobrowser://bbs-topic/6500980" class="other">帖子：<em>千年秦淮雄关玄武，受不起的沉重！</em></a>
 				</div>
 				<div class="m-message-list-item">
 					<p class="th">发表了帖子<i class="date f-fr">2015-01-19 22:23:42</i></p>
-					<div class="tb">也只有晚上才有时间来发一些贴子了</div>
+					<div class="tb hide-content">也只有晚上才有时间来发一些贴子了</div>
 					<a href="pcautobrowser://bbs-topic/6500980" class="other">帖子：<em>千年秦淮雄关玄武，受不起的沉重！</em></a>
 				</div>
 				<div class="m-message-list-item">
@@ -54,45 +54,17 @@
 		-->
 	</body>
 	<script  type="text/javascript">
-		function $(id) {
-			return document.getElementById(id);
+	var msgList = document.getElementById('m-message-list');
+	var tbs = msgList.querySelectorAll('.tb');
+	for (var i = 0; i < tbs.length; i++) {
+		tbs[i].onclick = function() {
+			this.className = 'tb';
+			// if (this.className == 'tb') {
+			// 	this.className = 'tb hide-content';
+			// } else if (this.className == 'tb hide-content') {
+			// 	this.className = 'tb';
+			// }
 		}
-		var div = $("m-message-list");
-		var pageNo = 1;
-
-		function get(section, url) {
-			var xmlhttp;
-
-			if(window.XMLHttpRequest) {
-				xmlhttp = new XMLHttpRequest();
-			}
-			else if(window.ActiveXObject) {
-				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-			}
-
-			xmlhttp.onreadystatechange = function() {
-				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-					section.innerHTML = xmlhttp.responseText;
-				}
-			}
-			xmlhttp.open("get", url, true);
-			xmlhttp.send();
-		}
-
-		function getNewsfeed(pageNo) {
-			var url = "http://mrobot.pcauto.com.cn/v3/bbs/getNewsfeed/31000498?pageSize=20&pageNo=" + pageNo + "&app=pcautobrowser";
-			var section = document.createElement("section");
-			get(section, url);
-			div.appendChild(section);
-		}
-
-		function moreNewsfeed() {
-			pageNo ++;
-			getNewsfeed(pageNo);
-
-			if (pageNo >= 3) {
-				$("m-more").style.display = 'none';
-			}
-		}
+	}
 	</script>
 </html>
