@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>报价丰富</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="author" content="baishun_gz huangyingxin_gz" />
+<link type="text/css" rel="stylesheet" href="app_price.css" />
+</head>
+<body>
+<!-- 计数器 -->
+<script>document.body.insertBefore(document.createElement("script"),document.body.firstChild).src="http://count5.pconline.com.cn/newcount/count.php?channel=99999&screen="+screen.width+"*"+screen.height+"&refer="+encodeURIComponent(document.referrer)+"&anticache="+new Date().getTime()+"&url="+encodeURIComponent(location.href);
+</script>
+<div class="g-doc">
+	<div class="m-mall">
+		<div class="item-wrap">
+			<a href="#" class="item">
+				<i class="ico-yhd"></i>
+				<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+				<span class="price">￥4399</span>
+				<span class="buy">购买</span>
+			</a>
+			<div class="hidden-p">
+				<a href="#" class="item">
+					<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+					<span class="price">￥4399</span>
+					<span class="buy">购买</span>
+				</a>
+				<a href="#" class="item">
+					<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+					<span class="price">￥4399</span>
+					<span class="buy">购买</span>
+				</a>
+			</div>
+			<span class="Jmore">展开其他商品<i class="ico-more arrow-b"></i></span>
+		</div>
+
+		<div class="item-wrap">
+			<a href="#" class="item">
+				<i class="ico-jd"></i>
+				<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+				<span class="price">￥4399</span>
+				<span class="buy">购买</span>
+			</a>
+			<div class="hidden-p">
+				<a href="#" class="item">
+					<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+					<span class="price">￥4399</span>
+					<span class="buy">购买</span>
+				</a>
+				<a href="#" class="item">
+					<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+					<span class="price">￥4399</span>
+					<span class="buy">购买</span>
+				</a>
+			</div>
+			<span class="Jmore">展开其他商品<i class="ico-more arrow-b"></i></span>
+		</div>
+		<div class="item-wrap">
+			<a href="#" class="item">
+				<i class="ico-yx"></i>
+				<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+				<span class="price">￥4399</span>
+				<span class="buy">购买</span>
+			</a>
+			<div class="hidden-p">
+				<a href="#" class="item">
+					<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+					<span class="price">￥4399</span>
+					<span class="buy">购买</span>
+				</a>
+				<a href="#" class="item">
+					<span class="item-tit">苹果 (apple) iPhone 64G手机（深空灰色）</span>
+					<span class="price">￥4399</span>
+					<span class="buy">购买</span>
+				</a>
+			</div>
+			<span class="Jmore">展开其他商品<i class="ico-more arrow-b"></i></span>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var Jmores = document.querySelectorAll('.Jmore'),
+	JhiddenP = document.querySelectorAll('.hidden-p');
+var i = 0;
+while (i < Jmores.length) {
+	Jmores[i].setAttribute('index',i);
+	Jmores[i].onclick = function() {
+		var curIndex = this.getAttribute('index');
+		if (JhiddenP[curIndex].className == 'hidden-p') {
+			JhiddenP[curIndex].className = 'hidden-p show-p';
+			Jmores[curIndex].getElementsByTagName('i')[0].className = 'ico-more arrow-t';
+		} else if (JhiddenP[curIndex].className == 'hidden-p show-p') {
+			JhiddenP[curIndex].className = 'hidden-p';
+			Jmores[curIndex].getElementsByTagName('i')[0].className = 'ico-more arrow-b';
+		}
+	}
+	i++;
+}
+</script>
+</body>
+</html>

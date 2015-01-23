@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title> - jsFiddle demo by walker</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-git.js'></script>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+    
+      <script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+    
+  
+  <style type='text/css'>
+    	@size:120px;
+	@bgcolor:#ddd;
+	@bgcolor1:#cc7;
+	@duration:1s;
+	*{margin:0;padding:0;}
+	.radial-progress{margin:30px 50px; position: relative;
+	.comm(){
+		width:@size;height:@size;position: absolute;top:0;left:0;border-radius: 50%;
+	}
+	.circle{
+		.comm;
+		background: @bgcolor;
+	.mask{clip:rect(0,@size,@size,@size/2);.comm;}
+	.fill{background: @bgcolor1; clip:rect(0,@size/2,@size,0); transition:-webkit-transform @duration;.comm;}
+	}
+	/*思路：容器只有右半边，内容只有左半边，所以当左半边旋转到右半边时，就可以看到内容了*/
+	}
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$('head style[type="text/css"]').attr('type', 'text/less');
+less.refreshStyles();	
+$(function(){
+    var m=$(".fill"),el=$("#deg").val(230),cur=$("#cur");
+    $("#start").click(function(){
+        var deg=el.val()||230;
+        m.css("transform","rotate("+deg+"deg)");
+        cur.text(deg);
+        el.val(Math.ceil(Math.random()*180));
+    });
+    $("#start").click();
+});
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+  <button id="start" style="margin:30px 0 0 50px; height:24px; width:50px;">rotate</button>
+<input type="number" id="deg" value="230" step="5" min="5" max="360" style="height:20px; width:40px;" /> degree, now <i id="cur"></i> degree.
+	<div class="radial-progress">
+  <!-- <div class="circle">
+    <div class="mask">
+      <div class="fill"></div>
+    </div>
+  </div> -->
+    <div class="circle">
+      <div class="mask" style="transform: rotate(50deg);">
+        <div class="fill" style="transform: rotate(230deg);"></div>
+      </div>
+     <!-- 第2个半圆填充>180的情况
+      <div class="mask" style="">
+        <div class="fill" style="transform: rotate(180deg);"></div>
+      </div> -->
+    </div>
+</div>
+  
+</body>
+
+
+</html>
+

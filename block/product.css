@@ -1,0 +1,13 @@
+/* product.css */
+.ico-album {width: 20px;height: 14px;margin-bottom: -2px; background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYBAMAAAAfR1CMAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMA5yduQ1cgyZx1TYD9lSbu6sEAAACUSURBVBjTYwAD93dQUALhizJAQSCEegDj84EIljqo6ucOYD5jAFSWVYAPpgiqj0p8to4EFL7iTCFkPpMwg6ECQ0YbjK9owMAsxCQ5UQHKFwYSho4GzEJQvgGQ4D4NFEOyj+2iAgMzsv2sQmjuWajA8GAhEp9FiOGdCBIf6AZgOCkAw2MBhM8sLABRKAcNr4cODOgAAFeCM6yOiTkoAAAAAElFTkSuQmCC") no-repeat left 1px; background-size: 15px;display: inline-block;}
+.m-product {margin-bottom: 10px;color: #999;font-size: 17px;line-height: 1;background-color: #fff;}
+.m-product .pic {display: block;position: relative;border-bottom:1px solid #e7e7e7;}
+.m-product .pic .pics-num {height: 20px; line-height: 20px; padding:0 6px; position: absolute;right: 12px;bottom:12px;border-radius: 3px;background-color: #adadad;font-size: 14px;color: #fff;}
+.m-product .txt {margin-top: 12px;overflow: hidden;padding-bottom: 8px;}
+.m-product p {margin: 0 12px 12px;overflow: hidden}
+
+.m-product .name {color: #333;font-size: 18px;}
+.m-product .txt span {font-size: 17px;}
+.m-product .txt .fn-btns {display:-webkit-box;display:-moz-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.m-product .txt .fn-btns a {height:34px;line-height: 34px;border:1px solid #25a3eb; color: #25a3eb;border-radius: 5px;text-align: center; -webkit-box-flex:1;-moz-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;display: block;}
+.m-product .txt .fn-btns a:first-child {margin-right: 12px;}

@@ -1,0 +1,68 @@
+/*news.css*/
+.m-news-list {
+	margin-bottom: 16px;
+	overflow: hidden
+}
+
+.m-news-list .tit {
+	padding: 9px 0;
+	font-size: 17px;
+	line-height: 26px;
+	display: block;
+	border-bottom: 1px solid #e6e6e6;
+	white-space: nowrap;
+	word-wrap: normal;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+.m-news-list .tit:first-child {
+	margin-top: -9px;
+}
+.m-news-list .tit:last-child {
+	border-bottom: none;
+}
+.news-tag {
+	height: 14px;
+	line-height: 14px;
+	padding:0 3px;
+	margin:5px 0 0 10px;
+	border-radius: 3px;
+	-webkit-text-size-adjust:none;
+	font-size: 10px;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	display: block;
+	float: right
+}
+/*专题*/
+.news-tag-a {
+	border-color: #f54242;
+	color: #f54242;
+}
+/*论坛*/
+.news-tag-b {
+	border-color: #00bca8;
+	color: #00bca8;
+}
+/*聚超值*/
+.news-tag-c {
+	border-color: #ff7038;
+	color: #ff7038;
+}
+/*直播*/
+.news-tag-d {
+	border-color: #348af4;
+	color: #348af4;
+}
+/*推广*/
+.news-tag-e {
+	border-color: #00b1f2;
+	color: #00b1f2;
+}
+/*图集*/
+.news-tag-f {
+	border-color: #35c153;
+	color: #35c153;
+}

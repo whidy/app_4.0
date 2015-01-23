@@ -1,0 +1,45 @@
+/*more.css*/
+.m-more {
+	text-align: center;
+}
+
+.m-more a {
+	height: 34px;
+	line-height: 34px;
+	display: block;
+	padding-right: 20px;
+	color: #aaa;
+	border: 1px solid #dcdddf;
+	border-radius: 3px;
+}
+
+.ico-more {
+	position: relative;
+	-webkit-transform: translate(0px, 0px) translateZ(0px);
+}
+
+.ico-more::after {
+	height: 8px;
+	width: 8px;
+
+}
+.arrow-t::after, .arrow-r::after, .arrow-b::after, .arrow-l::after {
+	border-color: #aaa;
+	border-width: 1px 1px 0 0;
+	border-image: none;
+	border-style: solid;
+	content: " ";
+	position: absolute;
+}
+.arrow-t::after {
+	-webkit-transform: rotate(-45deg);
+}
+.arrow-r::after {
+	-webkit-transform: rotate(45deg);
+}
+.arrow-b::after {
+	-webkit-transform: rotate(135deg);
+}
+.arrow-l::after {
+	-webkit-transform: rotate(-135deg);
+}

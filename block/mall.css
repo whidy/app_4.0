@@ -1,0 +1,98 @@
+/* mall.css */
+.m-mall .item {
+	min-height: 30px;
+	height: 44px;
+	line-height: 22px;
+	border-bottom: 1px solid #e6e6e6;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	padding: 12px 0;
+}
+
+.m-mall .item i {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+	vertical-align: top;
+	margin-top: 4px;
+	float: left
+}
+
+.m-mall .item .item-tit {
+	max-height: 44px;
+	width: 50%;
+	overflow: hidden;
+	display: block;
+	word-break: break-all;
+}
+
+.m-mall .item .price {
+	position: absolute;
+	top: 50%;
+	margin-top: -11px;
+	right: 70px
+}
+
+.m-mall .item .buy {
+	width: 55px;
+	height: 28px;
+	line-height: 28px;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	right: 0;
+	/*border: 1px solid #ff565d;
+	color: #ff565d;*/
+	color: #fff;
+	background-color: #f54242;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.ico-hqb {
+	background-position: 0 0
+}
+
+.ico-gm {
+	background-position: 0 -15px
+}
+
+.ico-pg {
+	background-position: 0 -30px
+}
+
+.ico-xd {
+	background-position: 0 -45px
+}
+
+.ico-yx {
+	background-position: 0 -60px
+}
+
+.ico-jd {
+	background-position: 0 -75px
+}
+
+.ico-yhd {
+	background-position: 0 -90px
+}
+
+.ico-kb {
+	background-position: 0 -105px
+}
+
+.ico-tm {
+	background-position: 0 -120px
+}
+
+.ico-sn {
+	background-position: 0 -135px
+}
+
+.ico-ymx {
+	background-position: 0 -150px
+}
+/* 新增华为和飞飞 */
+.m-mall .item .ico-ff,.m-mall .item .ico-hw{background-image:url("data:image/png;base64,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");background-size:15px;}.ico-ff{background-position:0 0;}.ico-hw{background-position:0 -16px;}

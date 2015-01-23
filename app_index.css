@@ -1,0 +1,24 @@
+<!--#include virtual="block/reset.css"-->
+<!--#include virtual="block/base.css"-->
+<!--#include virtual="block/box.css"-->
+<!--#include virtual="block/news.css"-->
+<!--#include virtual="block/mall.css"-->
+<!--#include virtual="block/product.css"-->
+<!--#include virtual="block/more.css"-->
+<!--#include virtual="block/comment.css"-->
+
+.m-specs {border:1px solid #e7e7e7;}
+.m-specs ul {overflow: hidden;}
+.m-specs ul li {height: 48px; border-bottom:1px solid #e7e7e7;width: 50%;
+float: left;}
+.specs-name, .specs-value {display: table-cell;vertical-align: middle;}
+.specs-name {height: 48px; width: 27px;background-color: #f7f7f7;text-align: center;color: #999;}
+.specs-value {padding-left:7px;color: #333;line-height: 20px;}
+.m-specs .m-more a {border:none;}
+
+.g-doc {background-color: #ebebeb}
+
+.m-mall .item:first-child {padding-top: 0;}
+.m-mall .item:last-child {margin-bottom: 0;padding-bottom: 20px;border-bottom: none;}
+
+.arrow-r::after {left:4px;top: 5px}

@@ -1,0 +1,43 @@
+/* comment.css */
+.m-total-comment {
+	font-size: 17px;
+	margin-bottom: 12px
+}
+.m-total-comment em {
+	font-size: 12px;
+	color: #333
+}
+
+.m-total-comment dl {
+	margin-bottom: 2px;
+	overflow: hidden
+}
+
+.m-total-comment dl dt {
+	width: 40px;
+	max-width: 16%;
+	float: left;
+	font-size: 15px;
+	color: #999
+}
+
+.m-total-comment dl dd {
+	width: 84%;
+	float: left;
+	font-size: 12px
+}
+
+.m-total-comment dl dd span {
+	padding: 3px 5px;
+	display: inline-block;
+	margin-bottom: 8px;
+	background: #f5f5f5
+}
+
+.m-total-comment .advantage dt, .m-total-comment .advantage dd em {
+	color: #25a3eb;
+}
+
+.m-total-comment .disadvantage dt, .m-total-comment .disadvantage dd em {
+	color: #f54242;
+}
