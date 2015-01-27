@@ -27,7 +27,7 @@ img{border:none;}
 .m-message-list-item .other em{color:#25a3eb;}
 .m-message-list-item .date{line-height:24px;color:#b0b0b0;}
 .m-message-list-item .name{display:inline-block;margin:0 2px;max-width:30%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;vertical-align:top;}
-.m-message-list-item a.name{color:#5299E9;}
+.m-message-list-item a.name{color:#25a3eb;}
 .m-message-list-item .f-fr{float:right;}
 
 /*查看更多*/
