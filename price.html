@@ -34,7 +34,7 @@
 					<span class="buy">购买</span>
 				</a>
 			</div>
-			<span class="Jmore">展开其他商品<i class="ico-more arrow-b"></i></span>
+			<span class="Jmore">点击展开该电商所有报价<i class="ico-more arrow-b"></i></span>
 		</div>
 
 		<div class="item-wrap">
@@ -56,7 +56,7 @@
 					<span class="buy">购买</span>
 				</a>
 			</div>
-			<span class="Jmore">展开其他商品<i class="ico-more arrow-b"></i></span>
+			<span class="Jmore">点击展开该电商所有报价<i class="ico-more arrow-b"></i></span>
 		</div>
 		<div class="item-wrap">
 			<a href="#" class="item">
@@ -77,7 +77,7 @@
 					<span class="buy">购买</span>
 				</a>
 			</div>
-			<span class="Jmore">展开其他商品<i class="ico-more arrow-b"></i></span>
+			<span class="Jmore">点击展开该电商所有报价<i class="ico-more arrow-b"></i></span>
 		</div>
 	</div>
 </div>
@@ -91,10 +91,10 @@ while (i < Jmores.length) {
 		var curIndex = this.getAttribute('index');
 		if (JhiddenP[curIndex].className == 'hidden-p') {
 			JhiddenP[curIndex].className = 'hidden-p show-p';
-			Jmores[curIndex].getElementsByTagName('i')[0].className = 'ico-more arrow-t';
+			Jmores[curIndex].innerHTML = '点击收起该电商所有报价<i class="ico-more arrow-t"></i>'
 		} else if (JhiddenP[curIndex].className == 'hidden-p show-p') {
 			JhiddenP[curIndex].className = 'hidden-p';
-			Jmores[curIndex].getElementsByTagName('i')[0].className = 'ico-more arrow-b';
+			Jmores[curIndex].innerHTML = '点击展开该电商所有报价<i class="ico-more arrow-b"></i>'
 		}
 	}
 	i++;

@@ -15,7 +15,6 @@
 
 .ico-more {
 	position: relative;
-	-webkit-transform: translate(0px, 0px) translateZ(0px);
 }
 
 .ico-more::after {
@@ -32,14 +31,30 @@
 	position: absolute;
 }
 .arrow-t::after {
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
 }
 .arrow-r::after {
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
 }
 .arrow-b::after {
+	transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
 	-webkit-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
 }
 .arrow-l::after {
+	transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
 	-webkit-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
 }
